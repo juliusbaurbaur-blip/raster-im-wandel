@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Raster im Wandel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <script>
+    window.onerror = function (msg, url, line, col, error) {
+      alert("Error: " + msg + "\nLine: " + line + "\nCol: " + col);
+      return false;
+    };
+  </script>
+  <canvas id="gridCanvas"></canvas>
+  <!-- Try cdnjs, sometimes unpkg is blocked or slow -->
+  <script src="three.min.js"></script>
+  <div id="controls">
+    <button id="btnLabil">Labil</button>
+    <button id="btnStable">Stable</button>
+    <button id="btnFreeze">Freeze</button>
+    <button id="btnReset">Reset</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
